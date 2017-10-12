@@ -1,0 +1,362 @@
+body {
+    background: #2a2420;
+    color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+a { color: #fff;}
+
+p {color:#ffc057;}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    height:60px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    margin: 5px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ccc;
+    display: inline-block;
+    padding: 5px;
+}
+
+nav a.current {
+    border-bottom: solid 2px #ffc057;
+}
+
+nav a:hover, nav a:focus, nav a:visited {
+    text-decoration: none;
+    color:#fff;
+}
+
+.section-wrapper {
+    position: relative;
+    width:100%;
+    display: grid;
+    grid-template-areas:"section";
+}
+
+.section-wrapper > div {
+    grid-area: section;
+}
+
+section {
+    display: block;
+    width: 100%;
+}
+
+.page {
+    margin: 0 auto;
+    display: block;
+    max-width: 1000px;
+}
+
+.page header {
+    margin-top:100px;
+    padding:0 20px;
+}
+
+.page .section-content {
+
+}
+
+.sub-section {
+    margin: 0 20px 20px;
+}
+
+a.page-control {
+    position: fixed;
+    top: -60px;
+    height: 100vh;
+    display: block;
+    text-decoration: none;
+}
+
+a.page-control:hover,
+a.page-control:focus,
+a.page-control:visited {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ccc;
+}
+
+a.page-control .page-label {
+    display: block;
+    padding: 0 20px;
+    height: 100%;
+    top: -50%;
+    transform: translateY(50%);
+}
+
+a.page-control .title {
+    display: block;
+    color: #666;
+}
+
+a.page-control .fa {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 100;
+    color: #666;
+}
+
+a.page-control:hover .fa,
+a.page-control:hover .title {
+    color: #ccc;
+}
+
+a.previous-page {
+    left: 0;
+}
+
+a.next-page {
+    right:0;
+    text-align: right;
+}
+
+
+
+ul.projects>li {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding: 0 20px 20px;
+}
+
+.tile {
+    outline: solid 1px #fff;
+    display: block;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    height:250px;
+    padding:10px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: rotateY(-90deg);
+    transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+
+.tile.show {
+    opacity: 1;
+    transform: none;
+    transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+
+.tile .caption {
+    position: absolute;
+    top: 200px;
+    left:0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    height:250px;
+    -moz-transform-style: flat;
+    -webkit-transform-style: flat;
+    transform-style: flat;
+    -moz-transition: opacity .15s ease-out,-moz-transform .25s cubic-bezier(0,.75,0,1);
+    -o-transition: opacity .15s ease-out,-o-transform .25s cubic-bezier(0,.75,0,1);
+    -webkit-transition: opacity .15s ease-out,-webkit-transform .25s cubic-bezier(0,.75,0,1);
+    transition: opacity .15s ease-out,transform .25s cubic-bezier(0,.75,0,1);
+}
+
+.tile .caption h3 {
+    text-align: center;
+    padding:10px;
+    font-size: 18px;
+}
+.tile .caption p {
+    opacity: 0;
+}
+
+.tile:hover, .tile:active, .tile:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tile:hover .caption {
+    background-color: rgba(0,0,0,0.8);
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+}
+
+.tile:hover .caption p {
+    opacity: 1;
+    transition: opacity .15s ease-out,transform .25s cubic-bezier(0,.75,0,1);
+    animation: pop 0.3s linear 1;
+    color: #fff;
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+
+.about-message {
+    max-width: 350px;
+    color: #ccc;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about-message strong {
+    color:#fff;
+}
+
+.about-me {
+    margin: 20px;
+    display: inline-block;
+}
+
+.about-me img {
+    max-width: 350px;
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}
+
+
+.sub-section.media  .carousel.carousel-slider .control-arrow {
+    padding: 10px 30px;
+}
+
+.sub-section.media .carousel .slide .legend {
+    bottom: 0;
+    height: 80px;
+    width: 60%;
+    left: 20%;
+    margin: 0;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.5;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.sub-section.media .carousel .slide:hover .legend {
+    opacity: 1;
+}
+
+.project-description { margin-bottom: 0;}
+.project-role { font-style: italic;}
+
+.challenge .title {
+    color: #f0f0f0;
+}
+
+.technology {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #f0f0f0;
+    font-size: 14px;
+}
+
+.client {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.client a {
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #f0f0f0;
+    font-size: 14px;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.github-link { position: absolute;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+.github-link span {display: block;  margin-top: 5px;}
+
+
+@media all and (max-width: 1600px) {
+    .page {
+        max-width:910px
+    }
+}
+
+@media all and (max-width: 1440px) {
+    .page {
+        max-width:880px
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .page {
+        max-width:820px
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .page {
+        max-width:720px
+    }
+}
+
+@media all and (max-width: 900px) {
+    .page {
+        max-width:620px
+    }
+}
+
+@media all and (max-width: 800px) {
+    .page {
+        max-width:580px
+    }
+}

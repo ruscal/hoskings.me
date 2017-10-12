@@ -8,8 +8,12 @@ if (typeof Promise === 'undefined') {
   window.Promise = require('promise/lib/es6-extensions.js');
 }
 
+//polyfill for new array calls etc
+require("babel-polyfill");
+
 // fetch() polyfill for making API calls.
 require('whatwg-fetch');
+
 
 // Object.assign() is commonly used with React.
 // It will use the native implementation if it's present and isn't buggy.

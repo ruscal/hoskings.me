@@ -1,0 +1,3 @@
+
+export const INITIALISE_APP = "INITIALISE_APP";
+export const SECTION_CHANGED = "SECTION_CHANGED";
