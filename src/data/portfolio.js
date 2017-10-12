@@ -34,7 +34,7 @@ export const projects = [
         },
         technologies:{
             items:[
-                "React", "Redux", "ASP.NET MVC", "ClearScript", "Entity Framework", "SQL Server", "HangFire", "SimpleInjector", "npm", "webpack", "babel", "ES6", "AnyChart"
+                "React", "Redux", "Bootstrap", "ASP.NET MVC", "ClearScript", "Entity Framework", "SQL Server", "HangFire", "SimpleInjector", "npm", "webpack", "babel", "ES6", "AnyChart"
             ]
         },
         clients: {

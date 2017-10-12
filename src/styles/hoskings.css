@@ -294,6 +294,10 @@ ul.projects>li {
     font-size: 14px;
 }
 
+.tile .technology {
+    font-size: 12px;
+}
+
 .client {
     display: inline-block;
     vertical-align: middle;

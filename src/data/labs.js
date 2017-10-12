@@ -8,24 +8,16 @@ export const projects = [
             text: "Personal website for Russ Hoskings",
             image: "/images/russ.jpg"
         },
-        demo: "",
-        media:[
-            {title:"", image:"/images/portfolio/quest/img1.jpg"}
-        ],
+
         overview:{
-            intro:"The overview intro ....",
-            body:"The overview body ..."
+            intro:"Portfolio site to showcase projects I have worked on and demonstrate my front-end skills.",
+            body:"Built the site in React / Redux.  Source code is available to view on GitHub, follow the link above."
         },
-        capabilities:{
-            intro:"The capabilities used ...",
-            items:[]
-        },
+
         technologies:{
-            intro:"The tech used ...",
-            items:[]
-        },
-        clients:[
-            {name:"Novartis", logo:"/images/clients/novartis-logo.png"}
-        ]
+            items:[
+                "React", "Redux", "npm", "webpack", "babel", "ES6"
+            ]
+        }
     }
 ];

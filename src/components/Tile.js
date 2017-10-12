@@ -29,6 +29,14 @@ class Tile extends Component {
     render(){
         const {className, path, project, index} = this.props;
 
+        const renderTechnology = (technology, index)=> {
+            return (
+                <span key={index} className="technology">
+                    {technology}
+                </span>
+            )
+        }
+
         let cssClass = ["tile"];
         if(className)
             cssClass.push(className);
@@ -44,6 +52,9 @@ class Tile extends Component {
                 <div className="caption">
                     <h3>{project.title}</h3>
                     <p>{project.caption.text}</p>
+                    <div className="technologies">
+                        {project.technologies.items.map(renderTechnology)}
+                    </div>
                 </div>
             </Link>
         );

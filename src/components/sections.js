@@ -14,8 +14,8 @@ export const SECTION_ABOUT = "about";
 export const sections = [
     { name: SECTION_PORTFOLIO_PROJECT, path:"/portfolio/:id", component: PortfolioProject, nav:false, section:SECTION_PORTFOLIO },
     { name: SECTION_PORTFOLIO, path:"/portfolio", component: Portfolio },
-   /* { name: SECTION_LABS_PROJECT, path:"/labs/:id", component: LabProject, nav:false, section:SECTION_LABS },
-    { name: SECTION_LABS, path:"/labs", component: Labs },*/
+    { name: SECTION_LABS_PROJECT, path:"/labs/:id", component: LabProject, nav:false, section:SECTION_LABS },
+    { name: SECTION_LABS, path:"/labs", component: Labs },
     { name: SECTION_ABOUT, path:"/about", component: About }
 ];
 
