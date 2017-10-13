@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import {makeGetPortfolioProjects} from '../selectors/projectSelectors'
 import Tile from './Tile'
 import PageControls from './PageControls'
+import PropTypes from 'prop-types';
 
 const renderProject = (project, index)=>{
     return <li key={project.id}><Tile project={project} path={`/portfolio/${project.id}`} index={index} /></li>
@@ -31,6 +32,10 @@ const Portfolio = (props)=>{
         </Section>
     );
 }
+
+Portfolio.propTypes = {
+    projects: PropTypes.array.isRequired
+};
 
 const makeMapStateToProps = ()=>{
     const getProjects = makeGetPortfolioProjects();

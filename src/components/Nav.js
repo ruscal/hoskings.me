@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import {NavLink, Route, Redirect} from 'react-router-dom'
 import {makeGetCurrentSectionName} from '../selectors/appSelectors'
+import PropTypes from 'prop-types';
 
 const Nav = ({sections, currentSection}) => {
     return (
@@ -13,6 +14,10 @@ const Nav = ({sections, currentSection}) => {
     )
 }
 
+Nav.propTypes = {
+    sections: PropTypes.array.isRequired,
+    currentSection: PropTypes.string
+};
 
 const makeMapStateToProps = ()=>{
     const getSectionName = makeGetCurrentSectionName();

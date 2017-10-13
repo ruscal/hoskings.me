@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -22,5 +23,9 @@ const CarouselWrapper = (props)=> {
        </Carousel>
     )
 }
+
+CarouselWrapper.propTypes = {
+    items: PropTypes.array.isRequired
+};
 
 export default CarouselWrapper

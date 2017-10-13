@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import {sectionHasChanged} from '../actions/app'
+import PropTypes from 'prop-types';
 
 class Section extends Component {
 
@@ -18,5 +19,8 @@ class Section extends Component {
     }
 }
 
+Section.propTypes = {
+    section: PropTypes.object.isRequired
+};
 
 export default connect(null, {handleChangeSection:sectionHasChanged})(Section);

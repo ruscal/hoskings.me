@@ -4,6 +4,7 @@ import PageControls from './PageControls'
 import Section from './Section'
 import { connect } from 'react-redux'
 import {makeGetNextPortfolioProject, makeGetPrevPortfolioProject} from '../selectors/projectSelectors'
+import PropTypes from 'prop-types';
 
 const PortfolioProject = (props)=>{
     const {match, nextProject, prevProject} = props;
@@ -23,6 +24,11 @@ const PortfolioProject = (props)=>{
         )
 }
 
+PortfolioProject.propTypes = {
+    match: PropTypes.object.isRequired,
+    nextProject: PropTypes.object,
+    prevProject: PropTypes.object
+};
 
 const makeMapStateToProps = ()=>{
     const getNextProject = makeGetNextPortfolioProject();

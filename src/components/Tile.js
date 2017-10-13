@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
-
+import PropTypes from 'prop-types';
 
 class Tile extends Component {
 
@@ -27,7 +27,7 @@ class Tile extends Component {
     }
 
     render(){
-        const {className, path, project, index} = this.props;
+        const {className, path, project} = this.props;
 
         const renderTechnology = (technology, index)=> {
             return (
@@ -60,6 +60,12 @@ class Tile extends Component {
         );
     }
 }
+
+Tile.propTypes = {
+    className: PropTypes.string,
+    path: PropTypes.string.isRequired,
+    project: PropTypes.object.isRequired
+};
 
 
 export default Tile

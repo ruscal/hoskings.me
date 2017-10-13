@@ -29,7 +29,7 @@ export const hasNonEmptyValue = (value) => {
 }
 
 export const distinctArray = (arrArg) => {
-    return arrArg.filter((elem, pos, arr) => arr.indexOf(elem) == pos);
+    return arrArg.filter((elem, pos, arr) => arr.indexOf(elem) === pos);
 };
 
 export const newGuid = () => {
@@ -62,7 +62,7 @@ export const getEnumName = (enumObj, val) =>
     var keyNames = Object.keys(enumObj);
     for (var i in keyNames) {
         var key = keyNames[i];
-        if (enumObj[key] == val)
+        if (enumObj[key] === val)
             return key;
     }
     return null;

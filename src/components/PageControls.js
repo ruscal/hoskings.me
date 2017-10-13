@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, Route, Redirect} from 'react-router-dom'
 import FontAwesome from 'react-fontawesome'
+import PropTypes from 'prop-types';
 
 const PageControl = (props)=> {
     const {path, title, className, icon} = props;
@@ -14,6 +15,13 @@ const PageControl = (props)=> {
     )
 }
 
+PageControl.propTypes = {
+    path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    className: PropTypes.string,
+    icon: PropTypes.string.isRequired
+};
+
 
 const PageControls = (props)=> {
     const {previous, next} = props;
@@ -24,5 +32,10 @@ const PageControls = (props)=> {
         </div>
     )
 }
+
+PageControls.propTypes = {
+    previous: PropTypes.object,
+    next: PropTypes.object
+};
 
 export default PageControls

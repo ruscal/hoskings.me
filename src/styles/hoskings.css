@@ -317,6 +317,27 @@ ul.projects>li {
     margin-bottom: 10px;
 }
 
+.link-btn,
+.link-btn:focus,
+.link-btn:active,
+.link-btn:visited{
+    padding: 5px;
+    border: solid 1px #9af1ff;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #d6edf1;
+    margin-left: 0;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.link-btn:hover {
+    background: #1c9baf;
+    color: #fff;
+    text-decoration: none;
+}
+
 .github-link { position: absolute;
     position: absolute;
     top: 0;

@@ -9,8 +9,8 @@ export const projects = [
             text: "Enterprise survey product for Discover",
             image: "http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"
         },
-        /*demo: "",
-        media:[
+        demo: { title:"View sample survey", url: "https://demo.questsurveys.com/Russ/pP0wR/Go" },
+        /* media:[
             {title:"Caption 1", image:"http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"},
             {title:"Caption 2", image:"http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"},
             {title:"Caption 3", image:"http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Project from './Project'
 import PageControls from './PageControls'
 import Section from './Section'
+import PropTypes from 'prop-types';
 
 const LabProject = (props)=>{
     const {match} = props;
@@ -12,5 +13,9 @@ const LabProject = (props)=>{
         </Section>
     )
 }
+
+LabProject.propTypes = {
+    match: PropTypes.object.isRequired
+};
 
 export default LabProject

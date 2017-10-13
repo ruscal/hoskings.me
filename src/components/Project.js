@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import {makeGetProject} from '../selectors/projectSelectors'
 import Carousel from './Carousel'
 import {toInnerHTMLObject} from '../utils/common'
+import PropTypes from 'prop-types';
 
 const Project = (props)=>{
     const {project} = props;
@@ -61,10 +62,14 @@ const Project = (props)=>{
                     <h1 dangerouslySetInnerHTML={toInnerHTMLObject(project.title)}></h1>
                     <p className="project-description" dangerouslySetInnerHTML={toInnerHTMLObject(project.description)}></p>
                     <p className="project-role" dangerouslySetInnerHTML={toInnerHTMLObject(project.role)}></p>
+
                 </header>
                 <div className="section-content">
                     {project.media && <div className="sub-section media">
                         <Carousel items={project.media} />
+                    </div>}
+                    {project.demo && <div className="sub-section demo">
+                        <a className="link-btn" href={project.demo.url}>{project.demo.title}</a>
                     </div>}
                     {project.overview && <div className="sub-section overview">
                         <h2>Overview</h2>
@@ -113,6 +118,10 @@ const Project = (props)=>{
             </div>
     );
 }
+
+Project.propTypes = {
+    project: PropTypes.object.isRequired
+};
 
 const makeMapStateToProps = ()=>{
     const getProject = makeGetProject();
