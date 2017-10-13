@@ -18,7 +18,7 @@ const CarouselWrapper = (props)=> {
     }
 
     return (
-       <Carousel showStatus={false} showThumbs={false}>
+       <Carousel showStatus={false} showThumbs={false} autoPlay={true}>
            {items && items.map(renderItem)}
        </Carousel>
     )

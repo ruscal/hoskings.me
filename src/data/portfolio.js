@@ -7,14 +7,16 @@ export const projects = [
         role: "Architect and lead developer",
         caption:{
             text: "Enterprise survey product for Discover",
-            image: "http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"
+            image: "/images/portfolio/quest/quest5.png"
         },
         demo: { title:"View sample survey", url: "https://demo.questsurveys.com/Russ/pP0wR/Go" },
-        /* media:[
-            {title:"Caption 1", image:"http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"},
-            {title:"Caption 2", image:"http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"},
-            {title:"Caption 3", image:"http://www.wearediscover.com/wp-content/uploads/2016/05/shutterstock_390425545.jpg"}
-        ],*/
+        media:[
+            {title:"Quest project overview", image:"/images/portfolio/quest/quest1.png"},
+            {title:"Response auditing", image:"/images/portfolio/quest/quest2.png"},
+            {title:"Dashboard reports", image:"/images/portfolio/quest/quest3.png"},
+            {title:"Survey builder", image:"/images/portfolio/quest/quest4.png"},
+            {title:"Survey example", image:"/images/portfolio/quest/quest5.png"}
+        ],
         overview:{
             intro:"Modernisation of a legacy product to support increasing demands from the market research sector.",
             body:"Tasked with supporting more complex surveys, with a UI that allows non-technical administration and real-time client reporting.   " +
@@ -106,6 +108,64 @@ export const projects = [
                 {name:"Novartis", url:"http://www.novartis.com"},
                 {name:"Freshfields Bruckhaus Deringer", url:"https://www.freshfields.com"},
                 {name:"Shire", url:"https://www.shire.com"}
+            ]
+        }
+    },
+    {
+        id: "mymood",
+        title: "myMood",
+        description: "Sales conference app, developed for <a href='http://novartis.com'>Novartis</a>  whilst Technical Director at <a href='http://wearediscover.com'>Discover Corporation</a>.",
+        role: "Concept, architect and lead developer",
+        caption:{
+            text: "Sales conference app",
+            image: "/images/portfolio/mymood/mymood1.png"
+        },
+        media:[
+            {title:"myMood stand", image:"/images/portfolio/mymood/mymood1.png"},
+            {title:"myMood interface", image:"/images/portfolio/mymood/mymood5.png"},
+            {title:"myMood instructions", image:"/images/portfolio/mymood/mymood4.png"},
+            {title:"myMood is Excited!", image:"/images/portfolio/mymood/mymood7.png"},
+            {title:"ourMood tracking app", image:"/images/portfolio/mymood/mymood6.png"},
+            {title:"Mood tower in foyer", image:"/images/portfolio/mymood/mymood2.png"},
+        ],
+        overview:{
+            intro:"Development and support an app for the annual sales conference to encourage engagement.  ",
+            body:"The concept was simple, give the user 8 moods that they could choose at any time and display the aggregate feeling of the conference in real time, throughout the conference.  " +
+            "Investigated best technology to use for app as only on iPad, chose Xamarin due to .Net background and short timelines. Still had to learn a bit of Xcode for custom components.  " +
+            "Created 2 apps, one for attendees and a drill down interactive chart for management, displaying change of mood over time (ourMood).  " +
+            "Developed several visual outputs including a “mood tower” (12ft high in the foyer showing the percentage of each mood) and a set of screens displayed during talks.  " +
+            "Provided full support throughout conference, bug fixing and pushing updates and working with the 3rd party conference provider. "
+        },
+     /*   challenges: {
+            items: [
+                {
+                    title:"Efficient responding",
+                    detail: "Employees tend to receive too many emails and too many surveys, PulseChecker needed to be quick and easy to respond to or it wouldn't be used.  " +
+                    "To achieve this the first question of the survey was embedded in the invitation email and surveys were encouraged to be only a few questions long."
+                },
+                {
+                    title:"Word analysis",
+                    detail: "The conversation feed could have hundreds of comments and so needed a mechanism to group and filter them. " +
+                    "A rough word analysis was used to extract common themes and the list of themes was then displayed next to the feed for quick filtering."
+                },
+                {
+                    title:"Two-way engagement",
+                    detail: "Employees had lost a lot of trust in surveys as they didn't see issues that they raised being acted upon or even receive any feedback on the overall results.  " +
+                    'PulseChecker tackled this in several ways: 1) Employees saw live results immediately, 2) They could have a direct conversation with management in the feed, 3) A significant project stakeholder was encouraged to submit a "Conclusion" post/email to all respondents,' +
+                    ' that recognised the issues raised and gave an account as to what would happen next.'
+                }
+            ]
+        },*/
+        technologies:{
+            items:[
+                "Xamarin (MonoTouch)", "Xcode", "ASP.NET", "Entity Framework", "SQL Server"
+            ]
+        },
+        clients: {
+            intro: "Clients that have used the system:",
+            items: [
+                {name:"Novartis", url:"http://www.novartis.com"}
+
             ]
         }
     }
