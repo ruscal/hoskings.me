@@ -7,7 +7,6 @@ import thunk from 'redux-thunk';
 export default function configureStore(debug) {
 
     const middlewares = debug ? [thunk, promise, logger ] : [thunk, promise ];
-    const store = createStore(rootReducer, {}, applyMiddleware(...middlewares));
-    return store;
+    return createStore(rootReducer, {}, applyMiddleware(...middlewares));
 };
 

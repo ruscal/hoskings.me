@@ -19,5 +19,27 @@ export const projects = [
                 "React", "Redux", "npm", "webpack", "babel", "ES6"
             ]
         }
+    },
+    {
+        id: "bounce",
+        title: "bounce! experiment",
+        demo:{title:"View demo", url:"http://hoskings-bounce.azurewebsites.net/"},
+        description: "Experimental React / Redux animation project",
+        caption:{
+            text: "Fire bouncing balls",
+            image: "/images/labs/bounce.png"
+        },
+
+        overview:{
+            intro:"This is an experimental React / Redux animation project:",
+            body:"<ul><li>add bouncing balls to a bounded box with gravity</li>" +
+            "<li>run physics engine with each tick in time an action</li></ul>"
+        },
+
+        technologies:{
+            items:[
+                "React", "Redux", "npm", "webpack", "babel", "ES6"
+            ]
+        }
     }
 ];
